@@ -47,4 +47,25 @@
       }
     }
   }
+
+  /* ===== MID ======= */
+
+  &__mid-block {
+    height: 80px;
+  }
+  &__mid-list-links {
+    gap: 34px;
+    li > a {
+      font-size: $font-md;
+      font-weight: 500;
+    }
+  }
+  &__mid-control-price > p {
+    font-size: $font-md;
+    font-weight: 800;
+    span {
+      color: #999999;
+      font-weight: 400;
+    }
+  }
 }

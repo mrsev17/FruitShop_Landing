@@ -1,4 +1,18 @@
 .header {
+  @media (max-width: 991px) {
+    &__mid-line {
+      margin-top: 30px;
+    }
+    &__mid-wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    &__mid-block {
+      height: auto;
+    }
+  }
+
   @media (max-width: 498px) {
     &__first-left-item-two,
     &__first-left-item-line {
@@ -7,6 +21,10 @@
     .nav-link > svg {
       width: 40px;
       height: 40px;
+    }
+    &__mid-list-links {
+      flex-direction: column;
+      align-items: center;
     }
   }
   .navbar-nav {

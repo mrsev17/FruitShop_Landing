@@ -1,12 +1,13 @@
-@media (max-width: 992px) {
-
+@media (max-width: 991px) {
+  .navbar-nav {
+    margin-top: 10px !important;
+    gap: 20px;
+  }
   .nav-link > svg {
     width: 30px;
     height: 30px;
   }
-
 }
-
 @media (max-width: 498px) {
   .container {
     max-width: 498px;
