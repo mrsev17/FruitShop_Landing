@@ -84,6 +84,9 @@ select {
   font: inherit;
 }
 
+figure {
+  margin: 0 !important;
+}
 
 @media (prefers-reduced-motion: reduce) {
   * {

@@ -75,6 +75,10 @@
     background-color: #2A2A2A;
   }
 }
+.dropdown-toggle::after {
+  content: none !important;
+}
+
 .nav-item > .nav-link {
   display: inline;
   transition: $accent-transition;
@@ -94,4 +98,7 @@
     color: $accent-color;
     transition: $accent-transition;
   }
+}
+.col-lg-3 {
+  padding-right: 20px;
 }

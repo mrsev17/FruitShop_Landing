@@ -68,4 +68,103 @@
       font-weight: 400;
     }
   }
+  /*==== third ====== */
+  &__third-left-left,
+  &__third-left-mid,
+  &__third-left-right {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  &__third-left-mid > h3 {
+    color: #ffffff;
+    font-size: $font-sm;
+    font-weight: 800;
+    margin: 0;
+  }
+  &__third-left {
+    background-color: $accent-color;
+  }
+  &__third-mid-dropdown > .dropdown > button {
+    color: black !important;
+    font-size: $font-md;
+    font-weight: 800;
+  }
+  &__third-mid-dropdown {
+    margin-left: 20px;
+  }
+  &__third-mid-dropdown > .dropdown > .dropdown-toggle {
+    gap: 20px;
+  }
+  &__third-line-mid-wrapper {
+    border: 1px solid #2A2A2A33;
+    position: relative;
+    height: 50px;
+  }
+  #search-item {
+    height: 16px;
+    border: none;
+    outline: none;
+    border-left: 1px solid #999999;
+    text-align: center;
+    &::placeholder {
+      padding-left: 8px;
+    }
+  }
+  &__search-submit-btn {
+    max-height: 50px;
+    border: 1px solid $accent-color;
+    background: $accent-color;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: $font-md;
+  }
+  &__third-mid-dropdown {
+    .dropdown-menu {
+      transform: translate3d(0px, 40px, 0px) !important;
+      margin-left: -21px !important;
+    }
+  }
+  &__wrapper-search-sbtn {
+    height: 100%;
+    max-height: 50px;
+    a {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 11px;
+      transition: $accent-transition;
+      &:hover {
+        color: black;
+        transition: $accent-transition;
+      }
+    }
+  }
+  &__phone-link {
+    color: black;
+    font-weight: 900;
+    font-size: $font-md;
+    transition: .7s;
+    &:hover {
+      color: $accent-color;
+      transition: .7s;
+    }
+  }
+  &__link-phone-icon {
+    border-radius: 50%;
+    border: 1px solid transparent;
+    transition: $accent-transition;
+    &:hover {
+      box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0 18px 36px -18px inset;
+      border: 1px solid $accent-color;
+      transition: $accent-transition;
+    }
+  }
+  &__info-two > p {
+    font-size: $font-sm;
+    opacity: 0.5;
+  }
+  &__dropdown-hide {
+    display: none;
+  }
 }
