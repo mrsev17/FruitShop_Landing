@@ -1,0 +1,16 @@
+.header {
+  @media (max-width: 498px) {
+    &__first-left-item-two,
+    &__first-left-item-line {
+      display: none;
+    }
+    .nav-link > svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .navbar-nav {
+    display: flex;
+    justify-content: right;
+  }
+}

@@ -1,0 +1,50 @@
+.header {
+  &__first-line {
+    background: #2A2A2A;
+  }
+  &__first-left-part {
+    gap: 20px;
+  }
+  &__first-left-item-one {
+    a {
+      color: #ffffff;
+      transition: $accent-transition;
+      &:hover {
+        transition: $accent-transition;
+        color: $accent-color;
+        svg {
+          fill: $accent-color;
+        }
+      }
+    }
+    a > span {
+      font-size: $font-sm;
+      font-weight: 600;
+    }
+  }
+  &__first-left-item-line {
+    border: 1px solid white;
+    height: 14px;
+  }
+  &__first-left-item-two > p {
+    color: white;
+    font-size: $font-sm;
+    font-weight: 600;
+  }
+  &__form {
+    gap: 20px;
+  }
+  &__first-right-item-one > a {
+    font-size: $font-sm;
+    font-weight: 600;
+    transition: $accent-transition;
+    color: white;
+    &:hover {
+      color: $accent-color;
+      transition: $accent-transition;
+      svg {
+        fill: $accent-color;
+      }
+    }
+  }
+}

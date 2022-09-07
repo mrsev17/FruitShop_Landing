@@ -1,0 +1,309 @@
+html {
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  color: #000;
+  text-decoration: none !important;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  text-rendering: optimizespeed;
+}
+
+p {
+  margin: 0 !important;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+.navbar {
+  padding: 12px 0 !important;
+}
+
+.navbar-brand {
+  margin-right: 0 !important;
+  gap: 4px;
+}
+
+.navbar-toggler {
+  background-color: #7FAD39 !important;
+  transition: #7FAD39;
+}
+.navbar-toggler:focus {
+  transition: #7FAD39;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0 -79px 40px 0 inset, rgba(0, 0, 0, 0.06) 0 2px 1px, rgba(0, 0, 0, 0.09) 0 4px 2px, rgba(0, 0, 0, 0.09) 0 8px 4px, rgba(0, 0, 0, 0.09) 0 16px 8px, rgba(0, 0, 0, 0.09) 0 32px 16px !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("../assets/icons/header_icon-toggler.png") !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+
+.collapse {
+  max-width: 380px;
+}
+
+.dropdown > button {
+  font-weight: 600;
+  padding: 0;
+  font-size: 12px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  transition: ease-out 0.7s;
+}
+.dropdown > button:hover, .dropdown > button:active, .dropdown > button:focus {
+  box-shadow: none;
+  color: #7FAD39;
+  background-color: transparent;
+}
+.dropdown > button:hover {
+  transition: ease-out 0.7s;
+}
+
+.btn:active, .btn:focus {
+  box-shadow: none;
+}
+
+.dropdown-toggle {
+  gap: 8px;
+  align-items: center;
+}
+
+.dropdown-item {
+  gap: 8px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.dropdown-menu > li {
+  background-color: #2A2A2A;
+}
+.dropdown-menu > li:hover {
+  background-color: #2A2A2A;
+}
+
+.dropdown-menu > li > a {
+  color: white;
+  transition: ease-out 0.7s;
+}
+.dropdown-menu > li > a:hover {
+  transition: ease-out 0.7s;
+  color: #7FAD39;
+  background-color: #2A2A2A;
+}
+
+.nav-item > .nav-link {
+  transition: ease-out 0.7s;
+  color: white;
+}
+.nav-item > .nav-link:hover {
+  transition: ease-out 0.7s;
+  color: #7FAD39;
+}
+.nav-item > .nav-link:hover svg {
+  fill: #7FAD39;
+}
+
+@media (max-width: 992px) {
+  .nav-link > svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 498px) {
+  .container {
+    max-width: 498px;
+    padding: 0 30px !important;
+  }
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-BoldItalic.woff2") format("woff2"), url("../fonts/Ubuntu-BoldItalic.woff") format("woff"), url("../fonts/Ubuntu-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Bold.woff2") format("woff2"), url("../fonts/Ubuntu-Bold.woff") format("woff"), url("../fonts/Ubuntu-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Italic.woff2") format("woff2"), url("../fonts/Ubuntu-Italic.woff") format("woff"), url("../fonts/Ubuntu-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Medium.woff2") format("woff2"), url("../fonts/Ubuntu-Medium.woff") format("woff"), url("../fonts/Ubuntu-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-LightItalic.woff2") format("woff2"), url("../fonts/Ubuntu-LightItalic.woff") format("woff"), url("../fonts/Ubuntu-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Light.woff2") format("woff2"), url("../fonts/Ubuntu-Light.woff") format("woff"), url("../fonts/Ubuntu-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Regular.woff2") format("woff2"), url("../fonts/Ubuntu-Regular.woff") format("woff"), url("../fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-MediumItalic.woff2") format("woff2"), url("../fonts/Ubuntu-MediumItalic.woff") format("woff"), url("../fonts/Ubuntu-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+.header__first-line {
+  background: #2A2A2A;
+}
+.header__first-left-part {
+  gap: 20px;
+}
+.header__first-left-item-one a {
+  color: #ffffff;
+  transition: ease-out 0.7s;
+}
+.header__first-left-item-one a:hover {
+  transition: ease-out 0.7s;
+  color: #7FAD39;
+}
+.header__first-left-item-one a:hover svg {
+  fill: #7FAD39;
+}
+.header__first-left-item-one a > span {
+  font-size: 12px;
+  font-weight: 600;
+}
+.header__first-left-item-line {
+  border: 1px solid white;
+  height: 14px;
+}
+.header__first-left-item-two > p {
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+.header__form {
+  gap: 20px;
+}
+.header__first-right-item-one > a {
+  font-size: 12px;
+  font-weight: 600;
+  transition: ease-out 0.7s;
+  color: white;
+}
+.header__first-right-item-one > a:hover {
+  color: #7FAD39;
+  transition: ease-out 0.7s;
+}
+.header__first-right-item-one > a:hover svg {
+  fill: #7FAD39;
+}
+
+@media (max-width: 498px) {
+  .header__first-left-item-two, .header__first-left-item-line {
+    display: none;
+  }
+  .header .nav-link > svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+.header .navbar-nav {
+  display: flex;
+  justify-content: right;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */

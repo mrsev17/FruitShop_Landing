@@ -1,0 +1,15 @@
+@media (max-width: 992px) {
+
+  .nav-link > svg {
+    width: 30px;
+    height: 30px;
+  }
+
+}
+
+@media (max-width: 498px) {
+  .container {
+    max-width: 498px;
+    padding: 0 30px !important;
+  }
+}
