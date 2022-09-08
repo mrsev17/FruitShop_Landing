@@ -102,3 +102,15 @@
 .col-lg-3 {
   padding-right: 20px;
 }
+.btn-custom {
+  color: white;
+  background-color: $accent-color;
+  transition: $accent-transition;
+  padding: 17px 19px;
+  border: 1px solid $accent-color;
+  &:hover {
+    color: $accent-color;
+    background-color: transparent;
+    border: 1px solid $accent-color;
+  }
+}

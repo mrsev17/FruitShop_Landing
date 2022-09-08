@@ -198,6 +198,19 @@ figure {
   padding-right: 20px;
 }
 
+.btn-custom {
+  color: white;
+  background-color: #7FAD39;
+  transition: ease-out 0.7s;
+  padding: 17px 19px;
+  border: 1px solid #7FAD39;
+}
+.btn-custom:hover {
+  color: #7FAD39;
+  background-color: transparent;
+  border: 1px solid #7FAD39;
+}
+
 @media (max-width: 991px) {
   .navbar-nav {
     margin-top: 10px !important;
@@ -207,6 +220,10 @@ figure {
   .nav-link > svg {
     width: 30px;
     height: 30px;
+  }
+
+  .col-lg-3 {
+    padding-right: 0;
   }
 }
 @media (max-width: 498px) {
@@ -503,6 +520,104 @@ figure {
 .header .navbar-nav {
   display: flex;
   justify-content: right;
+}
+
+.banner {
+  margin-top: 20px;
+}
+.banner__block {
+  height: 100%;
+  max-height: 442px;
+  border: 1px solid #cccccc;
+}
+.banner__main {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+.banner__main-left {
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+.banner__list-category {
+  gap: 6px;
+}
+.banner__list-category > li:first-child {
+  margin-top: 30px;
+}
+.banner__list-category > li:last-child {
+  margin-bottom: 30px;
+}
+.banner__list-category > li > a {
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  opacity: 0.5;
+  transition: ease-out 0.7s;
+}
+.banner__list-category > li > a:hover {
+  color: #7FAD39;
+  transition: ease-out 0.7s;
+}
+.banner__main-sub > p {
+  font-size: 16px;
+  font-weight: 800;
+  color: #7FAD39;
+}
+.banner__main-title > h1 {
+  margin-top: 10px;
+  font-size: 40px;
+  font-weight: 900;
+  max-width: 329px;
+}
+.banner__main-text > p {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.5;
+}
+.banner__main-btn {
+  margin-top: 50px;
+}
+
+@media (max-width: 1200px) {
+  .banner__main-btn {
+    margin-top: 30px;
+  }
+  .banner__main-right > figure > img {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .banner__wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .banner__main-sub {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .banner__block {
+    flex-direction: column-reverse;
+    max-height: none;
+  }
+  .banner__main-left {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner__main-title {
+    text-align: center;
+  }
+  .banner__main-btn {
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 498px) {
+  .banner__main-title > h1 {
+    font-size: 32px;
+  }
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

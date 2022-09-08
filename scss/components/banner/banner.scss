@@ -1,0 +1,57 @@
+.banner {
+  margin-top: 20px;
+  &__block {
+    height: 100%;
+    max-height: 442px;
+    border: 1px solid #cccccc;
+  }
+  &__main {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+  }
+  &__main-left {
+    margin-left: 50px;
+    margin-bottom: 30px;
+  }
+  &__list-category {
+    gap: 6px;
+  }
+  &__list-category > li:first-child {
+    margin-top: 30px;
+  }
+  &__list-category > li:last-child {
+    margin-bottom: 30px;
+  }
+  &__list-category > li > a {
+    margin-left: 20px;
+    font-size: $font-md;
+    font-weight: 500;
+    color: black;
+    opacity: 0.5;
+    transition: $accent-transition;
+    &:hover {
+      color: $accent-color;
+      transition: $accent-transition;
+    }
+  }
+  &__main-sub > p {
+    font-size: $font-md;
+    font-weight: 800;
+    color: $accent-color;
+  }
+  &__main-title > h1 {
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: 900;
+    max-width: 329px;
+  }
+  &__main-text > p {
+    margin-top: 8px;
+    font-size: $font-sm;
+    font-weight: 500;
+    opacity: 0.5;
+  }
+  &__main-btn {
+    margin-top: 50px;
+  }
+}
