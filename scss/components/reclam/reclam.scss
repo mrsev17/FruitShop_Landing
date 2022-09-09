@@ -1,0 +1,42 @@
+.reclam {
+  margin-top: 100px;
+  &__right > figure {
+    display: flex;
+    justify-content: end;
+  }
+  &__left,
+  &__right {
+    height: 263px;
+    position: relative;
+    img {
+      width: 98.2%;
+    }
+  }
+  &__btn > a {
+    &:hover {
+      background-color: white;
+    }
+  }
+  &__text-content-one {
+    position: absolute;
+    top: 66px;
+    right: 42px;
+  }
+  &__text-content-two {
+    position: absolute;
+    top: 66px;
+    right: 29px;
+  }
+  &__title > h2 {
+    font-size: 28px;
+    font-weight: 900;
+    color: white;
+  }
+  &__sub > p {
+    font-size: 20px;
+    color: white;
+  }
+  &__btn {
+    margin-top: 26px;
+  }
+}
