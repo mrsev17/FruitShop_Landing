@@ -1,0 +1,46 @@
+.featured {
+  margin-top: 50px;
+  padding-bottom: 100px;
+  &__title > h3 {
+    font-size: 34px;
+    font-weight: 900;
+  }
+  &__line {
+    margin: 18px auto 0;
+    border: 2px solid $accent-color;
+    width: 100%;
+    max-width: 80px;
+  }
+  &__control {
+    margin-top: 40px;
+  }
+  &__control-item {
+    opacity: 0.5;
+    border: 1px solid transparent;
+    background-color: transparent;
+    transition: $accent-transition;
+    &:hover {
+      opacity: 1;
+      transition: $accent-transition;
+    }
+  }
+  &__main {
+    margin-top: 40px;
+  }
+  &__main-two {
+    margin-top: 40px;
+  }
+  &__card {
+    background-color: white;
+  }
+  &__description {
+    margin-top: 60px;
+  }
+  &__sub > p {
+    font-size: 20px;
+  }
+  &__price > p {
+    font-size: 20px;
+    font-weight: 900;
+  }
+}
