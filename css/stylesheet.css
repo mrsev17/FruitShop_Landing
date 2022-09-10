@@ -390,7 +390,6 @@ figure {
   height: 28px;
   border: none;
   outline: none;
-  border-left: 1px solid #999999;
   text-align: center;
 }
 .header #search-item::placeholder {
