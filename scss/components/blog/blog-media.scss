@@ -1,0 +1,12 @@
+.blog {
+  @media (max-width: 992px) {
+    &__content {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    &__card-item {
+      width: 100%;
+    }
+  }
+}

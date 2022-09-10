@@ -751,7 +751,7 @@ figure {
     top: 30px;
   }
 }
-@media (max-width: 993px) {
+@media (max-width: 991px) {
   .reclam__wrapper {
     gap: 90px;
     flex-direction: column;
@@ -871,7 +871,6 @@ figure {
 
 .featured {
   margin-top: 50px;
-  padding-bottom: 100px;
 }
 .featured__title > h3 {
   font-size: 34px;
@@ -890,6 +889,7 @@ figure {
   opacity: 0.5;
   border: 1px solid transparent;
   background-color: transparent;
+  color: black;
   transition: ease-out 0.7s;
 }
 .featured__control-item:hover {
@@ -916,7 +916,7 @@ figure {
   font-weight: 900;
 }
 
-@media (max-width: 993px) {
+@media (max-width: 991px) {
   .featured__main-one, .featured__main-two {
     flex-wrap: wrap;
     gap: 20px;
@@ -934,6 +934,71 @@ figure {
   }
   .featured__card {
     margin: 0 auto;
+  }
+}
+
+.blog {
+  margin-top: 100px;
+}
+.blog__title > h3 {
+  font-size: 34px;
+  font-weight: 900;
+  text-align: center;
+}
+.blog__line {
+  margin: 18px auto 0;
+  border: 2px solid #7FAD39;
+  width: 100%;
+  max-width: 80px;
+}
+.blog__content {
+  margin-top: 40px;
+  gap: 20px;
+}
+.blog__card-item {
+  width: 33.3333333333%;
+}
+.blog__card-addon {
+  margin-top: 21px;
+}
+.blog__card-item > .card {
+  border: none;
+}
+.blog__card-item > .card img {
+  width: 100%;
+  height: 100%;
+  max-height: 259px;
+}
+.blog__card-item > .card .card-body {
+  padding: 0;
+}
+.blog__card-item > .card .card-body > h5 {
+  margin-top: 21px;
+  font-size: 20px;
+  font-weight: 900;
+}
+.blog__card-item > .card .card-body > p {
+  font-size: 16px;
+  margin-top: 30px !important;
+  opacity: 0.7;
+}
+.blog__link-more {
+  color: black;
+  opacity: 0.8;
+  font-weight: 800;
+}
+.blog__link-more:hover {
+  color: black;
+}
+
+@media (max-width: 992px) {
+  .blog__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .blog__card-item {
+    width: 100%;
   }
 }
 

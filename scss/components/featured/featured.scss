@@ -1,6 +1,5 @@
 .featured {
   margin-top: 50px;
-  padding-bottom: 100px;
   &__title > h3 {
     font-size: 34px;
     font-weight: 900;
@@ -18,6 +17,7 @@
     opacity: 0.5;
     border: 1px solid transparent;
     background-color: transparent;
+    color: black;
     transition: $accent-transition;
     &:hover {
       opacity: 1;
