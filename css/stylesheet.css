@@ -1082,6 +1082,7 @@ figure {
   padding-top: 20px;
   padding-left: 20px;
   border: none;
+  border-radius: 0;
 }
 .footer #footer-mail:focus {
   outline: none;
