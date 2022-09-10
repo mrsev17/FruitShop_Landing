@@ -1,0 +1,21 @@
+.rated {
+  @media (max-width: 993px) {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+      .col-lg-3 {
+        width: 100% !important;
+      }
+    }
+    &__item-products {
+      margin-top: 20px;
+    }
+    &__control {
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__control-btn {
+      gap: 24px;
+    }
+  }
+}
