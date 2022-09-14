@@ -7,6 +7,18 @@
     }
   }
   @media (max-width: 523px) {
+    &__tabs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .nav-link {
+        font-size: 20px;
+        &:focus {
+          color: $accent-color !important;
+          transition: $accent-transition !important;
+        }
+      }
+    }
     &__title > h3 {
       text-align: center;
     }

@@ -865,6 +865,7 @@ figure {
     width: 100% !important;
   }
   .rated__item-products {
+    align-items: center;
     margin-top: 20px;
   }
   .rated__control {
@@ -937,6 +938,18 @@ figure {
   }
 }
 @media (max-width: 523px) {
+  .featured__tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .featured__tabs .nav-link {
+    font-size: 20px;
+  }
+  .featured__tabs .nav-link:focus {
+    color: #7FAD39 !important;
+    transition: ease-out 0.7s !important;
+  }
   .featured__title > h3 {
     text-align: center;
   }
