@@ -21,7 +21,7 @@
 
                             <div class="header__first-left-part d-flex align-items-center">
                                 <div class="header__first-left-item-one d-flex align-items-center">
-                                    <a class="navbar-brand d-flex align-items-center" href="#"> <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <a class="navbar-brand d-flex align-items-center" href="mailto:colorlib.com"> <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 11L4 6H20ZM20 18H4V8L12 13L20 8V18Z" fill="currentColor"/>
                                     </svg> <span>Hello@colorlib.com</span> </a>
                                 </div>
@@ -248,7 +248,7 @@
                                 <div class="header__info d-flex flex-column">
 
                                     <div class="header__info-one">
-                                        <a class="header__phone-link" href="tel:651-118-8888">+6511.188.888</a>
+                                        <a class="header__phone-link" href="tel:6511188888">+6511188888</a>
                                     </div>
 
                                     <div class="header__info-two">
@@ -754,109 +754,503 @@
                 <div class="featured__line"></div>
 
                 <div class="featured__control d-flex justify-content-center align-items-center gap-3">
-                    <button class="featured__control-item">All</button>
-                    <button class="featured__control-item">Oranges</button>
-                    <button class="featured__control-item">Fresh Meat</button>
-                    <button class="featured__control-item">Vegetables</button>
-                    <button class="featured__control-item">Fastfood</button>
+                    <nav>
+                        <div class="featured__tabs nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">All</button>
+                            <button class="nav-link" id="nav-oranges-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Oranges</button>
+                            <button class="nav-link" id="nav-meat-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Fresh meat</button>
+                            <button class="nav-link" id="nav-vegetables-tab" data-bs-toggle="tab" data-bs-target="#nav-vegetables" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Fresh meat</button>
+                            <button class="nav-link" id="nav-fastfood-tab" data-bs-toggle="tab" data-bs-target="#nav-fastfood" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Fresh meat</button>
+                        </div>
+                    </nav>
                 </div>
 
-                <div class="featured__main">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-all-tab"><div class="featured__main">
 
-                    <div class="featured__main-one d-flex justify-content-between">
-                        <div class="featured__card">
+                        <div class="featured__main-one d-flex justify-content-between">
+                            <div class="featured__card">
 
-                            <figure>
-                                <img src="assets/images/featured-one.png" alt="Product" title="Product" loading="lazy">
-                            </figure>
+                                <figure>
+                                    <img src="assets/images/featured-one.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
 
-                            <div class="featured__description d-flex flex-column align-items-center">
-                                <div class="featured__sub"><p>Bunch of bananas</p></div>
-                                <div class="featured__price"><p>$30.00</p></div>
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Bunch of bananas</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-two.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Fresh organic apricot</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-three.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Avocado fruit</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-four.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Red Apple</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="featured__card">
 
-                            <figure>
-                                <img src="assets/images/featured-two.png" alt="Product" title="Product" loading="lazy">
-                            </figure>
+                        <div class="featured__main-two d-flex justify-content-between">
+                            <div class="featured__card">
 
-                            <div class="featured__description d-flex flex-column align-items-center">
-                                <div class="featured__sub"><p>Fresh organic apricot</p></div>
-                                <div class="featured__price"><p>$30.00</p></div>
+                                <figure>
+                                    <img src="assets/images/featured-five.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Two fresh figs</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-six.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Cucumber</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-seven.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Beef steak</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-eight.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Raw Broccoli</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="featured__card">
 
-                            <figure>
-                                <img src="assets/images/featured-three.png" alt="Product" title="Product" loading="lazy">
-                            </figure>
+                    </div></div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-oranges-tab"><div class="featured__main">
 
-                            <div class="featured__description d-flex flex-column align-items-center">
-                                <div class="featured__sub"><p>Avocado fruit</p></div>
-                                <div class="featured__price"><p>$30.00</p></div>
+                        <div class="featured__main-one d-flex justify-content-between">
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-two.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Bunch of bananas</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-two.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Fresh organic apricot</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-two.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Avocado fruit</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-two.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Red Apple</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="featured__card">
 
-                            <figure>
-                                <img src="assets/images/featured-four.png" alt="Product" title="Product" loading="lazy">
-                            </figure>
+                        <div class="featured__main-two d-flex justify-content-between">
+                            <div class="featured__card">
 
-                            <div class="featured__description d-flex flex-column align-items-center">
-                                <div class="featured__sub"><p>Red Apple</p></div>
-                                <div class="featured__price"><p>$30.00</p></div>
+                                <figure>
+                                    <img src="assets/images/featured-two.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Two fresh figs</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-two.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Cucumber</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-two.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Beef steak</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-two.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Raw Broccoli</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="featured__main-two d-flex justify-content-between">
-                        <div class="featured__card">
+                    </div></div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-meat-tab"><div class="featured__main">
 
-                            <figure>
-                                <img src="assets/images/featured-five.png" alt="Product" title="Product" loading="lazy">
-                            </figure>
+                        <div class="featured__main-one d-flex justify-content-between">
+                            <div class="featured__card">
 
-                            <div class="featured__description d-flex flex-column align-items-center">
-                                <div class="featured__sub"><p>Two fresh figs</p></div>
-                                <div class="featured__price"><p>$30.00</p></div>
+                                <figure>
+                                    <img src="assets/images/featured-three.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Bunch of bananas</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-three.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Fresh organic apricot</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-three.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Avocado fruit</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-three.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Red Apple</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="featured__card">
 
-                            <figure>
-                                <img src="assets/images/featured-six.png" alt="Product" title="Product" loading="lazy">
-                            </figure>
+                        <div class="featured__main-two d-flex justify-content-between">
+                            <div class="featured__card">
 
-                            <div class="featured__description d-flex flex-column align-items-center">
-                                <div class="featured__sub"><p>Cucumber</p></div>
-                                <div class="featured__price"><p>$30.00</p></div>
+                                <figure>
+                                    <img src="assets/images/featured-three.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Two fresh figs</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-three.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Cucumber</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-three.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Beef steak</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-three.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Raw Broccoli</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="featured__card">
 
-                            <figure>
-                                <img src="assets/images/featured-seven.png" alt="Product" title="Product" loading="lazy">
-                            </figure>
+                    </div></div>
+                    <div class="tab-pane fade" id="nav-vegetables" role="tabpanel" aria-labelledby="nav-vegetables-tab"><div class="featured__main">
 
-                            <div class="featured__description d-flex flex-column align-items-center">
-                                <div class="featured__sub"><p>Beef steak</p></div>
-                                <div class="featured__price"><p>$30.00</p></div>
+                        <div class="featured__main-one d-flex justify-content-between">
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-four.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Bunch of bananas</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-four.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Fresh organic apricot</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-four.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Avocado fruit</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-four.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Red Apple</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="featured__card">
 
-                            <figure>
-                                <img src="assets/images/featured-eight.png" alt="Product" title="Product" loading="lazy">
-                            </figure>
+                        <div class="featured__main-two d-flex justify-content-between">
+                            <div class="featured__card">
 
-                            <div class="featured__description d-flex flex-column align-items-center">
-                                <div class="featured__sub"><p>Raw Broccoli</p></div>
-                                <div class="featured__price"><p>$30.00</p></div>
+                                <figure>
+                                    <img src="assets/images/featured-four.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Two fresh figs</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-four.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Cucumber</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-four.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Beef steak</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-four.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Raw Broccoli</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div></div>
+                    <div class="tab-pane fade" id="nav-fastfood" role="tabpanel" aria-labelledby="nav-fastfood-tab"><div class="featured__main">
+
+                        <div class="featured__main-one d-flex justify-content-between">
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-five.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Bunch of bananas</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-five.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Fresh organic apricot</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-five.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Avocado fruit</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-five.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Red Apple</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="featured__main-two d-flex justify-content-between">
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-five.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Two fresh figs</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-five.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Cucumber</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-five.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Beef steak</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                            <div class="featured__card">
+
+                                <figure>
+                                    <img src="assets/images/featured-five.png" alt="Product" title="Product" loading="lazy">
+                                </figure>
+
+                                <div class="featured__description d-flex flex-column align-items-center">
+                                    <div class="featured__sub"><p>Raw Broccoli</p></div>
+                                    <div class="featured__price"><p>$30.00</p></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div></div>
                 </div>
 
             </div>
@@ -976,10 +1370,10 @@
                                 <p>Address: 60-49 Road 11378 New York</p>
                             </div>
                             <div class="footer__content-left-text">
-                                <p>Phone: +65 11.188.888</p>
+                                <p>Phone: <a href="tel:+6511188888">+6511188888</a></p>
                             </div>
                             <div class="footer__content-left-text">
-                                <p>Email: hello@colorlib.com</p>
+                                <p>Email: <a href="mailto:colorlib.com">hello@colorlib.com</a></p>
                             </div>
                         </div>
                     </div>
@@ -1086,11 +1480,11 @@
                 <div class="col-lg-5">
                     <div class="footer__pay-options">
                         <ul class="d-flex gap-3">
-                            <li><a href="#"><img src="assets/icons/footer-visa.png" alt="Visa"></a></li>
-                            <li><a href="#"><img src="assets/icons/MasterCard-light.png" alt="American"></a></li>
-                            <li><a href="#"><img src="assets/icons/footer-maestro.png" alt="Cirrus"></a></li>
-                            <li><a href="#"><img src="assets/icons/footer-cirrus.png" alt="Maestro"></a></li>
-                            <li><a href="#"><img src="assets/icons/footer-american.png" alt=""></a></li>
+                            <li><img src="assets/icons/footer-visa.png" alt="Visa"></li>
+                            <li><img src="assets/icons/MasterCard-light.png" alt="American"></li>
+                            <li><img src="assets/icons/footer-maestro.png" alt="Cirrus"></li>
+                            <li><img src="assets/icons/footer-cirrus.png" alt="Maestro"></li>
+                            <li><img src="assets/icons/footer-american.png" alt=""></li>
                         </ul>
                     </div>
                 </div>

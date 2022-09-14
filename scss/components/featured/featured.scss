@@ -43,4 +43,12 @@
     font-size: 20px;
     font-weight: 900;
   }
+  &__tabs {
+    border-bottom: none !important;
+    .nav-link {
+      color: black !important;
+      border: none !important;
+    }
+
+  }
 }

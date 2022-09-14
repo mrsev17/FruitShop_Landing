@@ -592,6 +592,9 @@ figure {
   }
 }
 @media (max-width: 991px) {
+  .banner__list-category {
+    align-items: center;
+  }
   .banner__wrapper {
     flex-direction: column;
     gap: 20px;
@@ -919,6 +922,13 @@ figure {
   font-size: 20px;
   font-weight: 900;
 }
+.featured__tabs {
+  border-bottom: none !important;
+}
+.featured__tabs .nav-link {
+  color: black !important;
+  border: none !important;
+}
 
 @media (max-width: 991px) {
   .featured__main-one, .featured__main-two {
@@ -1019,6 +1029,10 @@ figure {
   gap: 14px;
 }
 .footer__content-left-text > p {
+  color: white;
+  font-size: 14px;
+}
+.footer__content-left-text > p a {
   color: white;
   font-size: 14px;
 }
