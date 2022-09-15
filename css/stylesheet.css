@@ -930,6 +930,13 @@ figure {
   color: black !important;
   border: none !important;
 }
+.featured__tabs button {
+  transition: ease-out 0.7s;
+}
+.featured__tabs button:hover {
+  color: #7FAD39 !important;
+  transition: ease-out 0.7s;
+}
 
 @media (max-width: 991px) {
   .featured__main-one, .featured__main-two {
@@ -991,7 +998,7 @@ figure {
 .blog__card-item > .card {
   border: none;
 }
-.blog__card-item > .card img {
+.blog__card-item > .card .card-img-top {
   width: 100%;
   height: 100%;
   max-height: 259px;
@@ -1024,6 +1031,11 @@ figure {
     align-items: center;
     gap: 30px;
   }
+  .blog__card-item {
+    width: 75%;
+  }
+}
+@media (max-width: 568px) {
   .blog__card-item {
     width: 100%;
   }

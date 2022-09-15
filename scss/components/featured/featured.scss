@@ -49,6 +49,12 @@
       color: black !important;
       border: none !important;
     }
-
+    button {
+      transition: $accent-transition;
+      &:hover {
+        color: $accent-color !important;
+        transition: $accent-transition;
+      }
+    }
   }
 }
